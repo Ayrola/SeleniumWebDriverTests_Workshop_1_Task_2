@@ -93,7 +93,6 @@ namespace TestProject3
         [TearDown]
         public void TearDown()
         {
-            // Quit the driver
             driver.Dispose();
         }
     }
