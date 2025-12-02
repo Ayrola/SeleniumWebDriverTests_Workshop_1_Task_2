@@ -14,23 +14,23 @@ jobs:
 
           steps:
           -  name: Checkout code
-              uses: actions/checkout@v3
+             uses: actions/checkout@v3
 
           -  name: Set up .Net COre
-              uses: actions/setup-dotnet@v3
-              with:
+             uses: actions/setup-dotnet@v3
+             with:
                  dotnet-version: '8.0.x'
 
           -  name: Install dependencies
-              run: dotnet restore
+             run: dotnet restore
 
           -  name: Build
-              run: dotnet build --no-restore
+             run: dotnet build --no-restore
 
           -  name: Run testProject1
-              run: dotnet test TestProject1/TestProject1.csproj --verbosity normal
+             run: dotnet test TestProject1/TestProject1.csproj --verbosity normal
 
           -  name: Run testProject2
-              run: dotnet test TestProject2/TestProject2.csproj --verbosity normal
+             run: dotnet test TestProject2/TestProject2.csproj --verbosity normal
 
 
