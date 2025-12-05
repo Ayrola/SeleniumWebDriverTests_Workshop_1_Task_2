@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('Checkout code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Ayrola/SeleniumIdeJenkinsWorkshop2.git'
+                git branch: 'main', url: 'https://github.com/Ayrola/SeleniumWebDriverTests_Workshop_1_Task_2.git'
             }
         }
 
